@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseButton" table="BASE_BUTTON" schema="TEST">
+        <id name="buttonId" type="string">
+            <column name="BUTTON_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="buttonName" type="string">
+            <column name="BUTTON_NAME" length="50" />
+        </property>
+        <property name="buttonTitle" type="string">
+            <column name="BUTTON_TITLE" length="50" />
+        </property>
+        <property name="buttonImg" type="string">
+            <column name="BUTTON_IMG" length="50" />
+        </property>
+        <property name="buttonCode" type="string">
+            <column name="BUTTON_CODE" length="200" />
+        </property>
+        <property name="sortcode" type="big_decimal">
+            <column name="SORTCODE" precision="38" scale="0" />
+        </property>
+        <property name="buttonType" type="string">
+            <column name="BUTTON_TYPE" length="50" />
+        </property>
+        <property name="buttonRemak" type="string">
+            <column name="BUTTON_REMAK" length="200" />
+        </property>
+        <property name="deletemark" type="big_decimal">
+            <column name="DELETEMARK" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+        <property name="modifydate" type="serializable">
+            <column name="MODIFYDATE" />
+        </property>
+        <property name="modifyuserid" type="string">
+            <column name="MODIFYUSERID" length="50" />
+        </property>
+        <property name="modifyusername" type="string">
+            <column name="MODIFYUSERNAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

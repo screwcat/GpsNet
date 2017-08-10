@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Requestlog" table="REQUESTLOG" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="imei" type="string">
+            <column name="IMEI" length="32" />
+        </property>
+        <property name="rid" type="big_decimal">
+            <column name="RID" precision="38" scale="0" />
+        </property>
+        <property name="paralist" type="string">
+            <column name="PARALIST" length="400" />
+        </property>
+        <property name="url" type="string">
+            <column name="URL" length="800" />
+        </property>
+        <property name="ip" type="string">
+            <column name="IP" length="40" />
+        </property>
+        <property name="rdate" type="serializable">
+            <column name="RDATE" not-null="true" />
+        </property>
+        <property name="methodname" type="string">
+            <column name="METHODNAME" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

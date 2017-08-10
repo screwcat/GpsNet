@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Enclosure" table="ENCLOSURE" schema="TEST">
+        <id name="enclosureid" type="big_decimal">
+            <column name="ENCLOSUREID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="510" />
+        </property>
+        <property name="gpsid" type="string">
+            <column name="GPSID" length="510" />
+        </property>
+        <property name="points" type="string">
+            <column name="POINTS" length="510" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="radius" type="big_decimal">
+            <column name="RADIUS" precision="38" scale="0" />
+        </property>
+        <property name="limitspeed" type="java.lang.Boolean">
+            <column name="LIMITSPEED" precision="1" scale="0" />
+        </property>
+        <property name="maxspeed" type="java.lang.Double">
+            <column name="MAXSPEED" precision="126" scale="0" />
+        </property>
+        <property name="delay" type="big_decimal">
+            <column name="DELAY" precision="38" scale="0" />
+        </property>
+        <property name="sn" type="big_decimal">
+            <column name="SN" precision="38" scale="0" />
+        </property>
+        <property name="enclosuretype" type="string">
+            <column name="ENCLOSURETYPE" length="510" />
+        </property>
+        <property name="alarmtype" type="string">
+            <column name="ALARMTYPE" length="510" />
+        </property>
+        <property name="gatherregion" type="java.lang.Boolean">
+            <column name="GATHERREGION" precision="1" scale="0" />
+        </property>
+        <property name="sensitiveregion" type="java.lang.Boolean">
+            <column name="SENSITIVEREGION" precision="1" scale="0" />
+        </property>
+        <property name="gathernum" type="big_decimal">
+            <column name="GATHERNUM" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="bytime" type="java.lang.Boolean">
+            <column name="BYTIME" precision="1" scale="0" />
+        </property>
+        <property name="startdate" type="serializable">
+            <column name="STARTDATE" />
+        </property>
+        <property name="enddate" type="serializable">
+            <column name="ENDDATE" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

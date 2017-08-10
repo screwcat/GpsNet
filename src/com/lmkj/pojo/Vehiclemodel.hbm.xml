@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Vehiclemodel" table="VEHICLEMODEL" schema="TEST">
+        <id name="vbid" type="big_decimal">
+            <column name="VBID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="vtid" type="big_decimal">
+            <column name="VTID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="vbname" type="string">
+            <column name="VBNAME" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Geofence" table="GEOFENCE" schema="TEST">
+        <id name="geofenceid" type="big_decimal">
+            <column name="GEOFENCEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="deviceid" type="string">
+            <column name="DEVICEID" length="30" not-null="true" />
+        </property>
+        <property name="lat" type="java.lang.Double">
+            <column name="LAT" precision="126" scale="0" />
+        </property>
+        <property name="lng" type="java.lang.Double">
+            <column name="LNG" precision="126" scale="0" />
+        </property>
+        <property name="radius" type="java.lang.Double">
+            <column name="RADIUS" precision="126" scale="0" />
+        </property>
+        <property name="typeid" type="big_decimal">
+            <column name="TYPEID" precision="38" scale="0" />
+        </property>
+        <property name="geofencename" type="string">
+            <column name="GEOFENCENAME" length="160" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="400" />
+        </property>
+        <property name="cdate" type="serializable">
+            <column name="CDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Stoprecord" table="STOPRECORD" schema="TEST">
+        <id name="stopid" type="big_decimal">
+            <column name="STOPID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="100" />
+        </property>
+        <property name="starttime" type="serializable">
+            <column name="STARTTIME" />
+        </property>
+        <property name="endtime" type="serializable">
+            <column name="ENDTIME" />
+        </property>
+        <property name="interval" type="java.lang.Double">
+            <column name="INTERVAL" precision="126" scale="0" />
+        </property>
+        <property name="location" type="string">
+            <column name="LOCATION" length="1100" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="LATITUDE" precision="126" scale="0" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="LONGITUDE" precision="126" scale="0" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="100" />
+        </property>
+        <property name="velocity" type="java.lang.Double">
+            <column name="VELOCITY" precision="126" scale="0" />
+        </property>
+        <property name="driver" type="string">
+            <column name="DRIVER" length="100" />
+        </property>
+        <property name="processed" type="big_decimal">
+            <column name="PROCESSED" precision="38" scale="0" />
+        </property>
+        <property name="type" type="string">
+            <column name="TYPE" length="100" />
+        </property>
+        <property name="latitude1" type="java.lang.Double">
+            <column name="LATITUDE1" precision="126" scale="0" />
+        </property>
+        <property name="longitude1" type="java.lang.Double">
+            <column name="LONGITUDE1" precision="126" scale="0" />
+        </property>
+        <property name="location1" type="string">
+            <column name="LOCATION1" length="1100" />
+        </property>
+        <property name="valve" type="string">
+            <column name="VALVE" length="1000" />
+        </property>
+        <property name="station" type="string">
+            <column name="STATION" length="1100" />
+        </property>
+        <property name="valvestate" type="string">
+            <column name="VALVESTATE" length="100" />
+        </property>
+        <property name="valvestate1" type="string">
+            <column name="VALVESTATE1" length="100" />
+        </property>
+        <property name="videofilename" type="string">
+            <column name="VIDEOFILENAME" length="200" />
+        </property>
+        <property name="doorcheck" type="string">
+            <column name="DOORCHECK" length="100" />
+        </property>
+        <property name="flag" type="string">
+            <column name="FLAG" length="100" />
+        </property>
+        <property name="recordtime" type="serializable">
+            <column name="RECORDTIME" />
+        </property>
+        <property name="logtime" type="serializable">
+            <column name="LOGTIME" />
+        </property>
+        <property name="timespan" type="java.lang.Double">
+            <column name="TIMESPAN" precision="126" scale="0" />
+        </property>
+        <property name="childtype" type="string">
+            <column name="CHILDTYPE" length="510" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="510" />
+        </property>
+        <property name="oil1" type="java.lang.Double">
+            <column name="OIL1" precision="126" scale="0" />
+        </property>
+        <property name="oil2" type="java.lang.Double">
+            <column name="OIL2" precision="126" scale="0" />
+        </property>
+        <property name="mileage1" type="java.lang.Double">
+            <column name="MILEAGE1" precision="126" scale="0" />
+        </property>
+        <property name="mileage2" type="java.lang.Double">
+            <column name="MILEAGE2" precision="126" scale="0" />
+        </property>
+        <property name="imei" type="string">
+            <column name="IMEI" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>

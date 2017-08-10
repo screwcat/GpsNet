@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Carbrand" table="CARBRAND" schema="TEST">
+        <id name="brandid" type="big_decimal">
+            <column name="BRANDID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="brandname" type="string">
+            <column name="BRANDNAME" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseAppendproperty" table="BASE_APPENDPROPERTY" schema="TEST">
+        <id name="propertyId" type="string">
+            <column name="PROPERTY_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="propertyFunction" type="string">
+            <column name="PROPERTY_FUNCTION" length="50" />
+        </property>
+        <property name="propertyFunctionurl" type="string">
+            <column name="PROPERTY_FUNCTIONURL" length="200" />
+        </property>
+        <property name="propertyControlId" type="string">
+            <column name="PROPERTY_CONTROL_ID" length="50" />
+        </property>
+        <property name="propertyName" type="string">
+            <column name="PROPERTY_NAME" length="50" />
+        </property>
+        <property name="propertyControlType" type="big_decimal">
+            <column name="PROPERTY_CONTROL_TYPE" precision="38" scale="0" />
+        </property>
+        <property name="propertyControlDatasource" type="string">
+            <column name="PROPERTY_CONTROL_DATASOURCE" length="100" />
+        </property>
+        <property name="propertyControlLength" type="string">
+            <column name="PROPERTY_CONTROL_LENGTH" length="50" />
+        </property>
+        <property name="propertyControlMaxlength" type="big_decimal">
+            <column name="PROPERTY_CONTROL_MAXLENGTH" precision="38" scale="0" />
+        </property>
+        <property name="propertyControlStyle" type="string">
+            <column name="PROPERTY_CONTROL_STYLE" length="50" />
+        </property>
+        <property name="propertyControlValidator" type="string">
+            <column name="PROPERTY_CONTROL_VALIDATOR" length="200" />
+        </property>
+        <property name="propertyColspan" type="big_decimal">
+            <column name="PROPERTY_COLSPAN" precision="38" scale="0" />
+        </property>
+        <property name="propertyEvent" type="string">
+            <column name="PROPERTY_EVENT" length="200" />
+        </property>
+        <property name="sortcode" type="big_decimal">
+            <column name="SORTCODE" precision="38" scale="0" />
+        </property>
+        <property name="deletemark" type="big_decimal">
+            <column name="DELETEMARK" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+        <property name="modifydate" type="serializable">
+            <column name="MODIFYDATE" />
+        </property>
+        <property name="modifyuserid" type="string">
+            <column name="MODIFYUSERID" length="50" />
+        </property>
+        <property name="modifyusername" type="string">
+            <column name="MODIFYUSERNAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Company" table="COMPANY" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="comid" type="string">
+            <column name="COMID" length="14" />
+        </property>
+        <property name="comname" type="string">
+            <column name="COMNAME" length="100" />
+        </property>
+        <property name="provinceid" type="big_decimal">
+            <column name="PROVINCEID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="cityid" type="string">
+            <column name="CITYID" length="40" not-null="true" />
+        </property>
+        <property name="commanager" type="string">
+            <column name="COMMANAGER" length="40" />
+        </property>
+        <property name="comphone" type="string">
+            <column name="COMPHONE" length="60" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="100" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="400" />
+        </property>
+        <property name="sortcode" type="big_decimal">
+            <column name="SORTCODE" precision="38" scale="0" />
+        </property>
+        <property name="parentid" type="big_decimal">
+            <column name="PARENTID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="code" type="big_decimal">
+            <column name="CODE" precision="38" scale="0" />
+        </property>
+        <property name="authorizationcount" type="big_decimal">
+            <column name="AUTHORIZATIONCOUNT" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

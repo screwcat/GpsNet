@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Custommarker" table="CUSTOMMARKER" schema="TEST">
+        <id name="markerid" type="big_decimal">
+            <column name="MARKERID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="code" type="string">
+            <column name="CODE" length="510" />
+        </property>
+        <property name="owner" type="string">
+            <column name="OWNER" length="510" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="510" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="510" />
+        </property>
+        <property name="layer" type="string">
+            <column name="LAYER" length="510" />
+        </property>
+        <property name="depid" type="big_decimal">
+            <column name="DEPID" precision="38" scale="0" />
+        </property>
+        <property name="office" type="string">
+            <column name="OFFICE" length="510" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="LONGITUDE" precision="126" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="LATITUDE" precision="126" scale="0" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+        <property name="isenclosure" type="java.lang.Boolean">
+            <column name="ISENCLOSURE" precision="1" scale="0" />
+        </property>
+        <property name="scope" type="big_decimal">
+            <column name="SCOPE" precision="38" scale="0" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="510" />
+        </property>
+        <property name="fixed" type="java.lang.Boolean">
+            <column name="FIXED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

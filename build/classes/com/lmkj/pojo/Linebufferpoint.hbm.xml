@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Linebufferpoint" table="LINEBUFFERPOINT" schema="TEST">
+        <id name="ptid" type="big_decimal">
+            <column name="PTID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="enclosureid" type="big_decimal">
+            <column name="ENCLOSUREID" precision="38" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="LATITUDE" precision="126" scale="0" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="LONGITUDE" precision="126" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

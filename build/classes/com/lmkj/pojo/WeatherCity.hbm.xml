@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.WeatherCity" table="WEATHER_CITY" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="20">
+                <comment>&#179;&#199;&#202;&#208;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="pid" type="big_decimal">
+            <column name="PID" precision="38" scale="0" />
+        </property>
+        <property name="cid" type="string">
+            <column name="CID" length="20" />
+        </property>
+        <property name="cityCode" type="string">
+            <column name="CITY_CODE" length="20">
+                <comment>&#179;&#199;&#202;&#208;&#188;&#242;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="engine" type="big_decimal">
+            <column name="ENGINE" precision="38" scale="0">
+                <comment>&#202;&#199;&#183;&#241;&#208;&#232;&#210;&#170;&#183;&#162;&#182;&#175;&#187;&#250;&#186;&#197;0,&#178;&#187;&#208;&#232;&#210;&#170;
+                1,&#208;&#232;&#210;&#170;</comment>
+            </column>
+        </property>
+        <property name="engineno" type="big_decimal">
+            <column name="ENGINENO" precision="38" scale="0">
+                <comment>&#208;&#232;&#210;&#170;&#188;&#184;&#206;&#187;&#183;&#162;&#182;&#175;&#187;&#250;&#186;&#197;0,&#200;&#171;&#178;&#191; 1-9
+                ,&#208;&#232;&#210;&#170;&#183;&#162;&#182;&#175;&#187;&#250;&#186;&#197;&#186;&#243;N&#206;&#187;</comment>
+            </column>
+        </property>
+        <property name="carclass" type="big_decimal">
+            <column name="CARCLASS" precision="38" scale="0" />
+        </property>
+        <property name="classa" type="big_decimal">
+            <column name="CLASSA" precision="38" scale="0">
+                <comment>&#202;&#199;&#183;&#241;&#208;&#232;&#210;&#170;&#179;&#181;&#188;&#220;&#186;&#197;0,&#178;&#187;&#208;&#232;&#210;&#170;
+                1,&#208;&#232;&#210;&#170;</comment>
+            </column>
+        </property>
+        <property name="classno" type="big_decimal">
+            <column name="CLASSNO" precision="38" scale="0">
+                <comment>&#208;&#232;&#210;&#170;&#188;&#184;&#206;&#187;&#179;&#181;&#188;&#220;&#186;&#197;0,&#200;&#171;&#178;&#191; 1-9
+                &#208;&#232;&#210;&#170;&#179;&#181;&#188;&#220;&#186;&#197;&#186;&#243;N&#206;&#187;</comment>
+            </column>
+        </property>
+        <property name="regist" type="big_decimal">
+            <column name="REGIST" precision="38" scale="0">
+                <comment>&#202;&#199;&#183;&#241;&#208;&#232;&#210;&#170;&#181;&#199;&#188;&#199;&#214;&#164;&#202;&#233;&#186;&#197;0,&#178;&#187;&#208;&#232;&#210;&#170;
+                1,&#208;&#232;&#210;&#170;</comment>
+            </column>
+        </property>
+        <property name="registno" type="big_decimal">
+            <column name="REGISTNO" precision="38" scale="0">
+                <comment>&#208;&#232;&#210;&#170;&#188;&#184;&#206;&#187;&#181;&#199;&#188;&#199;&#214;&#164;&#202;&#233;0,&#200;&#171;&#178;&#191; 1-9
+                &#208;&#232;&#210;&#170;&#181;&#199;&#188;&#199;&#214;&#164;&#202;&#233;&#186;&#243;N&#206;&#187;</comment>
+            </column>
+        </property>
+        <property name="addr" type="string">
+            <column name="ADDR" length="20">
+                <comment>&#202;&#161;&#183;&#221;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="carabbr" type="string">
+            <column name="CARABBR" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>

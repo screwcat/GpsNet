@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Traffic" table="TRAFFIC" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="vid" type="big_decimal">
+            <column name="VID" precision="38" scale="0" />
+        </property>
+        <property name="createtime" type="serializable">
+            <column name="CREATETIME" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="20" />
+        </property>
+        <property name="devid" type="string">
+            <column name="DEVID" length="16" />
+        </property>
+        <property name="simno" type="string">
+            <column name="SIMNO" length="12" />
+        </property>
+        <property name="staticDate" type="string">
+            <column name="STATIC_DATE" length="16" />
+        </property>
+        <property name="beginTime" type="serializable">
+            <column name="BEGIN_TIME" />
+        </property>
+        <property name="endTime" type="serializable">
+            <column name="END_TIME" />
+        </property>
+        <property name="maveo" type="java.lang.Double">
+            <column name="MAVEO" precision="126" scale="0" />
+        </property>
+        <property name="distance" type="java.lang.Double">
+            <column name="DISTANCE" precision="126" scale="0" />
+        </property>
+        <property name="SOil" type="java.lang.Double">
+            <column name="S_OIL" precision="126" scale="0" />
+        </property>
+        <property name="beginAddr" type="string">
+            <column name="BEGIN_ADDR" length="250" />
+        </property>
+        <property name="endAddr" type="string">
+            <column name="END_ADDR" length="250" />
+        </property>
+        <property name="beginOil" type="java.lang.Double">
+            <column name="BEGIN_OIL" precision="126" scale="0" />
+        </property>
+        <property name="endOil" type="java.lang.Double">
+            <column name="END_OIL" precision="126" scale="0" />
+        </property>
+        <property name="beginDis" type="java.lang.Double">
+            <column name="BEGIN_DIS" precision="126" scale="0" />
+        </property>
+        <property name="endDis" type="java.lang.Double">
+            <column name="END_DIS" precision="126" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

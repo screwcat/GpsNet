@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseOrganization" table="BASE_ORGANIZATION" schema="TEST">
+        <id name="organizationId" type="string">
+            <column name="ORGANIZATION_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="organizationCode" type="string">
+            <column name="ORGANIZATION_CODE" length="20" />
+        </property>
+        <property name="organizationName" type="string">
+            <column name="ORGANIZATION_NAME" length="50" />
+        </property>
+        <property name="organizationInnerphone" type="string">
+            <column name="ORGANIZATION_INNERPHONE" length="20" />
+        </property>
+        <property name="organizationOuterphone" type="string">
+            <column name="ORGANIZATION_OUTERPHONE" length="20" />
+        </property>
+        <property name="organizationManager" type="string">
+            <column name="ORGANIZATION_MANAGER" length="50" />
+        </property>
+        <property name="organizationAssistantmanager" type="string">
+            <column name="ORGANIZATION_ASSISTANTMANAGER" length="50" />
+        </property>
+        <property name="organizationFax" type="string">
+            <column name="ORGANIZATION_FAX" length="20" />
+        </property>
+        <property name="organizationZipcode" type="string">
+            <column name="ORGANIZATION_ZIPCODE" length="20" />
+        </property>
+        <property name="organizationAddress" type="string">
+            <column name="ORGANIZATION_ADDRESS" length="200" />
+        </property>
+        <property name="parentid" type="string">
+            <column name="PARENTID" length="50" />
+        </property>
+        <property name="organizationRemark" type="string">
+            <column name="ORGANIZATION_REMARK" length="200" />
+        </property>
+        <property name="sortcode" type="big_decimal">
+            <column name="SORTCODE" precision="38" scale="0" />
+        </property>
+        <property name="deletemark" type="big_decimal">
+            <column name="DELETEMARK" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+        <property name="modifydate" type="serializable">
+            <column name="MODIFYDATE" />
+        </property>
+        <property name="modifyuserid" type="string">
+            <column name="MODIFYUSERID" length="50" />
+        </property>
+        <property name="modifyusername" type="string">
+            <column name="MODIFYUSERNAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

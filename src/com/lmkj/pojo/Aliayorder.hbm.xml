@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Aliayorder" table="ALIAYORDER" schema="TEST">
+        <id name="oid" type="big_decimal">
+            <column name="OID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="orderstate" type="big_decimal">
+            <column name="ORDERSTATE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="uid" type="big_decimal">
+            <column name="uId" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="surplusmoney" type="double">
+            <column name="SURPLUSMONEY" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="tradesn" type="string">
+            <column name="TRADESN" length="100" />
+        </property>
+        <property name="tradetime" type="serializable">
+            <column name="TRADETIME" />
+        </property>
+        <property name="cdate" type="serializable">
+            <column name="CDATE" />
+        </property>
+        <property name="imonth" type="big_decimal">
+            <column name="IMONTH" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iyear" type="big_decimal">
+            <column name="IYEAR" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="imei" type="string">
+            <column name="IMEI" length="30" />
+        </property>
+        <property name="tcid" type="big_decimal">
+            <column name="TCID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="tcbdate" type="serializable">
+            <column name="TCBDATE" not-null="true" />
+        </property>
+        <property name="tcedate" type="serializable">
+            <column name="TCEDATE" not-null="true" />
+        </property>
+        <property name="userorderid" type="string">
+            <column name="USERORDERID" length="64" />
+        </property>
+    </class>
+</hibernate-mapping>

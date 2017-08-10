@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Deviceinfo" table="DEVICEINFO" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="imei" type="string">
+            <column name="IMEI" length="30" not-null="true" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="40" />
+        </property>
+        <property name="simno" type="string">
+            <column name="SIMNO" length="40" />
+        </property>
+        <property name="carphone" type="string">
+            <column name="CARPHONE" length="22" />
+        </property>
+        <property name="cdate" type="date">
+            <column name="CDATE" length="7" />
+        </property>
+        <property name="udate" type="date">
+            <column name="UDATE" length="7" />
+        </property>
+        <property name="isinstall" type="big_decimal">
+            <column name="ISINSTALL" precision="38" scale="0" />
+        </property>
+        <property name="tcpprotocol" type="string">
+            <column name="TCPPROTOCOL" length="20" />
+        </property>
+        <property name="isallot" type="big_decimal">
+            <column name="ISALLOT" precision="38" scale="0" />
+        </property>
+        <property name="isdel" type="big_decimal">
+            <column name="ISDEL" precision="38" scale="0" />
+        </property>
+        <property name="islocked" type="big_decimal">
+            <column name="ISLOCKED" precision="38" scale="0" />
+        </property>
+        <property name="platform" type="string">
+            <column name="PLATFORM" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="100" />
+        </property>
+        <property name="platformbyplate" type="string">
+            <column name="PLATFORMBYPLATE" length="100" />
+        </property>
+        <property name="passwordbyplate" type="string">
+            <column name="PASSWORDBYPLATE" length="100" />
+        </property>
+        <property name="totaltrack" type="big_decimal">
+            <column name="TOTALTRACK" precision="38" scale="0" />
+        </property>
+        <property name="trackuser" type="big_decimal">
+            <column name="TRACKUSER" precision="38" scale="0" />
+        </property>
+        <property name="flag" type="string">
+            <column name="FLAG" length="30" />
+        </property>
+        <property name="imsi" type="string">
+            <column name="IMSI" length="100" />
+        </property>
+        <property name="isauthorization" type="big_decimal">
+            <column name="ISAUTHORIZATION" precision="38" scale="0" />
+        </property>
+        <property name="guid" type="string">
+            <column name="GUID" length="100" />
+        </property>
+        <property name="authorizationdate" type="string">
+            <column name="AUTHORIZATIONDATE" length="20" />
+        </property>
+        <property name="invaliddate" type="string">
+            <column name="INVALIDDATE" length="20" />
+        </property>
+        <property name="activation" type="big_decimal">
+            <column name="ACTIVATION" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

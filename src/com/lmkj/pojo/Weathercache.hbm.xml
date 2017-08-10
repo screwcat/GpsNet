@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Weathercache" table="WEATHERCACHE" schema="TEST">
+        <id name="wid" type="big_decimal">
+            <column name="WID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="jsonweather" type="string">
+            <column name="JSONWEATHER" length="4000" />
+        </property>
+        <property name="wdate" type="string">
+            <column name="WDATE" length="60" />
+        </property>
+        <property name="citycode" type="string">
+            <column name="CITYCODE" length="40" />
+        </property>
+        <property name="adate" type="serializable">
+            <column name="ADATE" />
+        </property>
+    </class>
+</hibernate-mapping>

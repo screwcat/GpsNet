@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Gpsmileage" table="GPSMILEAGE" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="510" />
+        </property>
+        <property name="oillastcomp" type="java.lang.Double">
+            <column name="OILLASTCOMP" precision="126" scale="0" />
+        </property>
+        <property name="mileagelastcomp" type="java.lang.Double">
+            <column name="MILEAGELASTCOMP" precision="126" scale="0" />
+        </property>
+        <property name="lastcomptime" type="serializable">
+            <column name="LASTCOMPTIME" />
+        </property>
+        <property name="mileagelasthour" type="java.lang.Double">
+            <column name="MILEAGELASTHOUR" precision="126" scale="0" />
+        </property>
+        <property name="oillasthour" type="java.lang.Double">
+            <column name="OILLASTHOUR" precision="126" scale="0" />
+        </property>
+        <property name="mileagelastday" type="java.lang.Double">
+            <column name="MILEAGELASTDAY" precision="126" scale="0" />
+        </property>
+        <property name="oillastday" type="java.lang.Double">
+            <column name="OILLASTDAY" precision="126" scale="0" />
+        </property>
+        <property name="mileagelastmonth" type="java.lang.Double">
+            <column name="MILEAGELASTMONTH" precision="126" scale="0" />
+        </property>
+        <property name="oillastmonth" type="java.lang.Double">
+            <column name="OILLASTMONTH" precision="126" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

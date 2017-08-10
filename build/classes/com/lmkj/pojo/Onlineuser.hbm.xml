@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Onlineuser" table="ONLINEUSER" schema="TEST">
+        <id name="olid" type="big_decimal">
+            <column name="OLID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="uid" type="big_decimal">
+            <column name="uId" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="useraccount" type="string">
+            <column name="USERACCOUNT" length="100" />
+        </property>
+        <property name="userid" type="string">
+            <column name="USERID" length="100" />
+        </property>
+        <property name="username" type="string">
+            <column name="USERNAME" length="100" />
+        </property>
+        <property name="userpwd" type="string">
+            <column name="USERPWD" length="100" />
+        </property>
+        <property name="appkey" type="string">
+            <column name="APPKEY" length="100" />
+        </property>
+        <property name="udid" type="string">
+            <column name="UDID" length="100" />
+        </property>
+        <property name="os" type="string">
+            <column name="OS" length="40" />
+        </property>
+        <property name="osversion" type="string">
+            <column name="OSVERSION" length="100" />
+        </property>
+        <property name="appvesion" type="string">
+            <column name="APPVESION" length="100" />
+        </property>
+        <property name="ver" type="string">
+            <column name="VER" length="100" />
+        </property>
+        <property name="usersession" type="string">
+            <column name="USERSESSION" length="100" />
+        </property>
+        <property name="unique" type="string">
+            <column name="unique" length="100" />
+        </property>
+        <property name="logintime" type="serializable">
+            <column name="LOGINTIME" />
+        </property>
+        <property name="lastonlinetime" type="big_decimal">
+            <column name="LASTONLINETIME" precision="38" scale="0" />
+        </property>
+        <property name="deviceToken" type="string">
+            <column name="DEVICE_TOKEN" length="100" />
+        </property>
+        <property name="deviceType" type="big_decimal">
+            <column name="DEVICE_TYPE" precision="38" scale="0" />
+        </property>
+        <property name="ip" type="string">
+            <column name="IP" length="100" />
+        </property>
+        <property name="regionid" type="string">
+            <column name="REGIONID" length="100" />
+        </property>
+        <property name="sourceid" type="string">
+            <column name="SOURCEID" length="100" />
+        </property>
+        <property name="usertype" type="big_decimal">
+            <column name="USERTYPE" precision="38" scale="0" />
+        </property>
+        <property name="locationtype" type="big_decimal">
+            <column name="LOCATIONTYPE" precision="38" scale="0" />
+        </property>
+        <property name="locationid" type="big_decimal">
+            <column name="LOCATIONID" precision="38" scale="0" />
+        </property>
+        <property name="sort" type="string">
+            <column name="SORT" length="100" />
+        </property>
+        <property name="sortcolumn" type="string">
+            <column name="SORTCOLUMN" length="100" />
+        </property>
+        <property name="sortdirection" type="string">
+            <column name="SORTDIRECTION" length="100" />
+        </property>
+        <property name="role" type="string">
+            <column name="ROLE" length="100" />
+        </property>
+        <property name="cid" type="string">
+            <column name="CID" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

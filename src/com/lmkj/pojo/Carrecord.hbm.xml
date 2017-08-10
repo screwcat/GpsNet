@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Carrecord" table="CARRECORD" schema="TEST">
+        <id name="fileid" type="big_decimal">
+            <column name="FILEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="filename" type="string">
+            <column name="FILENAME" length="120" />
+        </property>
+        <property name="finished" type="big_decimal">
+            <column name="FINISHED" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="filepath" type="string">
+            <column name="FILEPATH" length="400" />
+        </property>
+        <property name="thumbnailpath" type="string">
+            <column name="THUMBNAILPATH" length="400" />
+        </property>
+        <property name="imei" type="string">
+            <column name="IMEI" length="30" />
+        </property>
+        <property name="comid" type="big_decimal">
+            <column name="COMID" precision="38" scale="0" />
+        </property>
+        <property name="filesize" type="big_decimal">
+            <column name="FILESIZE" precision="38" scale="0" />
+        </property>
+        <property name="devicemodel" type="string">
+            <column name="DEVICEMODEL" length="40" />
+        </property>
+        <property name="isfinish" type="big_decimal">
+            <column name="ISFINISH" precision="38" scale="0" />
+        </property>
+        <property name="longitude" type="string">
+            <column name="LONGITUDE" length="60" />
+        </property>
+        <property name="latitude" type="string">
+            <column name="LATITUDE" length="60" />
+        </property>
+        <property name="filetype" type="string">
+            <column name="FILETYPE" length="20" />
+        </property>
+        <property name="cdate" type="date">
+            <column name="CDATE" length="7" />
+        </property>
+        <property name="udate" type="date">
+            <column name="UDATE" length="7" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="40" />
+        </property>
+        <property name="skinkey" type="string">
+            <column name="SKINKEY" length="10" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="400" />
+        </property>
+    </class>
+</hibernate-mapping>

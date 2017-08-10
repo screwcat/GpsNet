@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseRecyclebin" table="BASE_RECYCLEBIN" schema="TEST">
+        <id name="recyclebinId" type="string">
+            <column name="RECYCLEBIN_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="recyclebinName" type="string">
+            <column name="RECYCLEBIN_NAME" length="50" />
+        </property>
+        <property name="recyclebinDatabase" type="string">
+            <column name="RECYCLEBIN_DATABASE" length="50" />
+        </property>
+        <property name="recyclebinTable" type="string">
+            <column name="RECYCLEBIN_TABLE" length="50" />
+        </property>
+        <property name="recyclebinFieldkey" type="string">
+            <column name="RECYCLEBIN_FIELDKEY" length="50" />
+        </property>
+        <property name="recyclebinEventfield" type="string">
+            <column name="RECYCLEBIN_EVENTFIELD" length="50" />
+        </property>
+        <property name="recyclebinRemark" type="string">
+            <column name="RECYCLEBIN_REMARK" length="50" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

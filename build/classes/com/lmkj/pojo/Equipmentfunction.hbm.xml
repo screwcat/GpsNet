@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Equipmentfunction" table="EQUIPMENTFUNCTION" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="equipmentmodel" type="string">
+            <column name="EQUIPMENTMODEL" length="100" />
+        </property>
+        <property name="functionname" type="string">
+            <column name="FUNCTIONNAME" length="100" />
+        </property>
+        <property name="englishname" type="string">
+            <column name="ENGLISHNAME" length="100" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

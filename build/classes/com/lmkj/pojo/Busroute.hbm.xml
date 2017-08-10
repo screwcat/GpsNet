@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Busroute" table="BUSROUTE" schema="TEST">
+        <id name="busrouteid" type="big_decimal">
+            <column name="BUSROUTEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="starttime" type="string">
+            <column name="STARTTIME" length="510" />
+        </property>
+        <property name="endtime" type="string">
+            <column name="ENDTIME" length="510" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

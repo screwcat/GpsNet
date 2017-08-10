@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Redpackets" table="REDPACKETS" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="sender" type="string">
+            <column name="SENDER" length="100" not-null="true" />
+        </property>
+        <property name="packettype" type="big_decimal">
+            <column name="PACKETTYPE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="qrcode" type="string">
+            <column name="QRCODE" length="400" />
+        </property>
+        <property name="price" type="big_decimal">
+            <column name="PRICE" scale="4" not-null="true" />
+        </property>
+        <property name="createtime" type="date">
+            <column name="CREATETIME" length="7" not-null="true" />
+        </property>
+        <property name="valid" type="date">
+            <column name="VALID" length="7" />
+        </property>
+        <property name="text" type="string">
+            <column name="TEXT" length="400" not-null="true" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="LONGITUDE" precision="126" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="LATITUDE" precision="126" scale="0" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="40" />
+        </property>
+        <property name="radius" type="java.lang.Double">
+            <column name="RADIUS" precision="126" scale="0" />
+        </property>
+        <property name="number" type="big_decimal">
+            <column name="Number" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

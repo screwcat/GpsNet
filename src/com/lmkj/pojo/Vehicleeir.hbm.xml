@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Vehicleeir" table="VEHICLEEIR" schema="TEST">
+        <id name="vid" type="big_decimal">
+            <column name="VID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="billid" type="big_decimal">
+            <column name="BILLID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oodrivinglicense" type="big_decimal">
+            <column name="OODRIVINGLICENSE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iodrivinglicense" type="big_decimal">
+            <column name="IODRIVINGLICENSE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="olicensetag" type="big_decimal">
+            <column name="OLICENSETAG" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ilicensetag" type="big_decimal">
+            <column name="ILICENSETAG" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="omrcercertify" type="big_decimal">
+            <column name="OMRCERCERTIFY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="imrcercertify" type="big_decimal">
+            <column name="IMRCERCERTIFY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oinscard" type="big_decimal">
+            <column name="OINSCARD" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iinscard" type="big_decimal">
+            <column name="IINSCARD" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oinstructions" type="big_decimal">
+            <column name="OINSTRUCTIONS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iinstructions" type="big_decimal">
+            <column name="IINSTRUCTIONS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="osewagepermit" type="big_decimal">
+            <column name="OSEWAGEPERMIT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="isewagepermit" type="big_decimal">
+            <column name="ISEWAGEPERMIT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oleftbiglight" type="big_decimal">
+            <column name="OLEFTBIGLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ileftbiglight" type="big_decimal">
+            <column name="ILEFTBIGLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="orightbiglight" type="big_decimal">
+            <column name="ORIGHTBIGLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="irightbiglight" type="big_decimal">
+            <column name="IRIGHTBIGLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oleftsmalllight" type="big_decimal">
+            <column name="OLEFTSMALLLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="orightsamlllight" type="big_decimal">
+            <column name="ORIGHTSAMLLLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="irightsmalllight" type="big_decimal">
+            <column name="IRIGHTSMALLLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oleftturnlight" type="big_decimal">
+            <column name="OLEFTTURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ileftturnlight" type="big_decimal">
+            <column name="ILEFTTURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="orightturnlight" type="big_decimal">
+            <column name="ORIGHTTURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="irightturnlight" type="big_decimal">
+            <column name="IRIGHTTURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oleftmirror" type="big_decimal">
+            <column name="OLEFTMIRROR" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ileftmirror" type="big_decimal">
+            <column name="ILEFTMIRROR" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="orightmirror" type="big_decimal">
+            <column name="ORIGHTMIRROR" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="irightmirror" type="big_decimal">
+            <column name="IRIGHTMIRROR" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oleftaturnlight" type="big_decimal">
+            <column name="OLEFTATURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ileftaturnlight" type="big_decimal">
+            <column name="ILEFTATURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="orightaturnlight" type="big_decimal">
+            <column name="ORIGHTATURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="irightaturnlight" type="big_decimal">
+            <column name="IRIGHTATURNLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oleftbrakelights" type="big_decimal">
+            <column name="OLEFTBRAKELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ileftbrakelights" type="big_decimal">
+            <column name="ILEFTBRAKELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="orightbrakelights" type="big_decimal">
+            <column name="ORIGHTBRAKELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="irightbrakelights" type="big_decimal">
+            <column name="IRIGHTBRAKELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oplatelight" type="big_decimal">
+            <column name="OPLATELIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iplatelight" type="big_decimal">
+            <column name="IPLATELIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="osidelights" type="big_decimal">
+            <column name="OSIDELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="isidelights" type="big_decimal">
+            <column name="ISIDELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oantifog" type="big_decimal">
+            <column name="OANTIFOG" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iantifog" type="big_decimal">
+            <column name="IANTIFOG" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="odashboard" type="big_decimal">
+            <column name="ODASHBOARD" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="idashboard" type="big_decimal">
+            <column name="IDASHBOARD" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="owiper" type="big_decimal">
+            <column name="OWIPER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iwiper" type="big_decimal">
+            <column name="IWIPER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="obumper" type="big_decimal">
+            <column name="OBUMPER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ibumper" type="big_decimal">
+            <column name="IBUMPER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oseatcover" type="big_decimal">
+            <column name="OSEATCOVER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iseatcover" type="big_decimal">
+            <column name="ISEATCOVER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ocigarettelighter" type="big_decimal">
+            <column name="OCIGARETTELIGHTER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="icigarettelighter" type="big_decimal">
+            <column name="ICIGARETTELIGHTER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ochassis" type="big_decimal">
+            <column name="OCHASSIS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ichassis" type="big_decimal">
+            <column name="ICHASSIS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oantenna" type="big_decimal">
+            <column name="OANTENNA" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iantenna" type="big_decimal">
+            <column name="IANTENNA" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ocassetteplayers" type="big_decimal">
+            <column name="OCASSETTEPLAYERS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="icassetteplayers" type="big_decimal">
+            <column name="ICASSETTEPLAYERS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oottomans" type="big_decimal">
+            <column name="OOTTOMANS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iottomans" type="big_decimal">
+            <column name="IOTTOMANS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oashtray" type="big_decimal">
+            <column name="OASHTRAY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iashtray" type="big_decimal">
+            <column name="IASHTRAY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ooilcap" type="big_decimal">
+            <column name="OOILCAP" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ioilcap" type="big_decimal">
+            <column name="IOILCAP" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ogatelights" type="big_decimal">
+            <column name="OGATELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="igatelights" type="big_decimal">
+            <column name="IGATELIGHTS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oreflectlight" type="big_decimal">
+            <column name="OREFLECTLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ireflectlight" type="big_decimal">
+            <column name="IREFLECTLIGHT" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oenginecondition" type="big_decimal">
+            <column name="OENGINECONDITION" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ienginecondition" type="big_decimal">
+            <column name="IENGINECONDITION" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oaircondition" type="big_decimal">
+            <column name="OAIRCONDITION" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iaircondition" type="big_decimal">
+            <column name="IAIRCONDITION" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ojack" type="big_decimal">
+            <column name="OJACK" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ijack" type="big_decimal">
+            <column name="IJACK" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ofireextinguisher" type="big_decimal">
+            <column name="OFIREEXTINGUISHER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ifireextinguisher" type="big_decimal">
+            <column name="IFIREEXTINGUISHER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="osparetire" type="big_decimal">
+            <column name="OSPARETIRE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="isparetire" type="big_decimal">
+            <column name="ISPARETIRE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="okey" type="big_decimal">
+            <column name="OKEY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ikey" type="big_decimal">
+            <column name="IKEY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="otirewrench" type="big_decimal">
+            <column name="OTIREWRENCH" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="itirewrench" type="big_decimal">
+            <column name="ITIREWRENCH" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="oscrewdriver" type="big_decimal">
+            <column name="OSCREWDRIVER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iscrewdriver" type="big_decimal">
+            <column name="ISCREWDRIVER" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="owrench" type="big_decimal">
+            <column name="OWRENCH" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iwrench" type="big_decimal">
+            <column name="IWRENCH" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="owarningsigns" type="big_decimal">
+            <column name="OWARNINGSIGNS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="iwarningsigns" type="big_decimal">
+            <column name="IWARNINGSIGNS" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="lesseemanager" type="string">
+            <column name="LESSEEMANAGER" length="60" />
+        </property>
+        <property name="lesseeman" type="string">
+            <column name="LESSEEMAN" length="20" />
+        </property>
+        <property name="rentmanager" type="string">
+            <column name="RENTMANAGER" length="60" />
+        </property>
+        <property name="rentman" type="string">
+            <column name="RENTMAN" length="20" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="160" />
+        </property>
+        <property name="lesseebdate" type="serializable">
+            <column name="LESSEEBDATE" not-null="true" />
+        </property>
+        <property name="lesseeedate" type="serializable">
+            <column name="LESSEEEDATE" not-null="true" />
+        </property>
+        <property name="bmileage" type="big_decimal">
+            <column name="BMILEAGE" precision="38" scale="0" />
+        </property>
+        <property name="emileage" type="big_decimal">
+            <column name="EMILEAGE" precision="38" scale="0" />
+        </property>
+        <property name="realdate" type="serializable">
+            <column name="REALDATE" />
+        </property>
+        <property name="vehiclename" type="string">
+            <column name="VEHICLENAME" length="20" />
+        </property>
+        <property name="adddate" type="serializable">
+            <column name="ADDDATE" />
+        </property>
+        <property name="traveldestination" type="string">
+            <column name="TRAVELDESTINATION" length="80" />
+        </property>
+        <property name="ileftsmalllight" type="big_decimal">
+            <column name="ILEFTSMALLLIGHT" precision="38" scale="0" />
+        </property>
+        <property name="billstatus" type="big_decimal">
+            <column name="BILLSTATUS" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

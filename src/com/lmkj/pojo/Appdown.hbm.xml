@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Appdown" table="APPDOWN" schema="TEST">
+        <id name="serviceId" type="big_decimal">
+            <column name="SERVICE_ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="appname" type="string">
+            <column name="APPNAME" length="100" not-null="true" />
+        </property>
+        <property name="filepath" type="string">
+            <column name="FILEPATH" length="300" not-null="true" />
+        </property>
+        <property name="filename" type="string">
+            <column name="FILENAME" length="100" not-null="true" />
+        </property>
+        <property name="filesize" type="big_decimal">
+            <column name="FILESIZE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="filecreatedate" type="serializable">
+            <column name="FILECREATEDATE" not-null="true" />
+        </property>
+        <property name="toland" type="big_decimal">
+            <column name="TOLAND" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="appid" type="string">
+            <column name="APPID" length="100" not-null="true" />
+        </property>
+        <property name="fileversion" type="string">
+            <column name="FILEVERSION" length="40" />
+        </property>
+        <property name="devicemodel" type="string">
+            <column name="DEVICEMODEL" length="40" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="400" />
+        </property>
+        <property name="istracklimit" type="big_decimal">
+            <column name="ISTRACKLIMIT" precision="38" scale="0" />
+        </property>
+        <property name="limittrack" type="big_decimal">
+            <column name="LIMITTRACK" precision="38" scale="0" />
+        </property>
+        <property name="alarttack" type="big_decimal">
+            <column name="ALARTTACK" precision="38" scale="0" />
+        </property>
+        <property name="isnecessaryapp" type="big_decimal">
+            <column name="ISNECESSARYAPP" precision="38" scale="0" />
+        </property>
+        <property name="filetype" type="big_decimal">
+            <column name="FILETYPE" precision="38" scale="0" />
+        </property>
+        <property name="skinkey" type="string">
+            <column name="SKINKEY" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

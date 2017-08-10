@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseOASetup" table="BASE_O_A_SETUP" schema="TEST">
+        <id name="setupId" type="string">
+            <column name="SETUP_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="string">
+            <column name="USER_ID" length="50" />
+        </property>
+        <property name="setupIname" type="string">
+            <column name="SETUP_INAME" length="50" />
+        </property>
+        <property name="navigateurl" type="string">
+            <column name="NAVIGATEURL" length="200" />
+        </property>
+        <property name="target" type="string">
+            <column name="TARGET" length="50" />
+        </property>
+        <property name="setupImg" type="string">
+            <column name="SETUP_IMG" length="50" />
+        </property>
+        <property name="setupRemak" type="string">
+            <column name="SETUP_REMAK" length="200" />
+        </property>
+        <property name="sortcode" type="big_decimal">
+            <column name="SORTCODE" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

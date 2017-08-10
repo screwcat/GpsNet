@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Leauditcollectnotification" table="LEAUDITCOLLECTNOTIFICATION" schema="TEST">
+        <id name="notificationid" type="big_decimal">
+            <column name="NOTIFICATIONID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="type" type="big_decimal">
+            <column name="TYPE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="param1" type="string">
+            <column name="PARAM1" length="1024" />
+        </property>
+        <property name="param2" type="string">
+            <column name="PARAM2" length="1024" />
+        </property>
+    </class>
+</hibernate-mapping>

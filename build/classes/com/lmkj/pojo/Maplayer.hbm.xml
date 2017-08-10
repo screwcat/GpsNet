@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Maplayer" table="MAPLAYER" schema="TEST">
+        <id name="layerid" type="big_decimal">
+            <column name="LAYERID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="visible" type="java.lang.Boolean">
+            <column name="VISIBLE" precision="1" scale="0" />
+        </property>
+        <property name="animated" type="java.lang.Boolean">
+            <column name="ANIMATED" precision="1" scale="0" />
+        </property>
+        <property name="icon" type="string">
+            <column name="ICON" length="510" />
+        </property>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+        <property name="maxiconzoom" type="big_decimal">
+            <column name="MAXICONZOOM" precision="38" scale="0" />
+        </property>
+        <property name="maxlabelzoom" type="big_decimal">
+            <column name="MAXLABELZOOM" precision="38" scale="0" />
+        </property>
+        <property name="miniconzoom" type="big_decimal">
+            <column name="MINICONZOOM" precision="38" scale="0" />
+        </property>
+        <property name="minlabelzoom" type="big_decimal">
+            <column name="MINLABELZOOM" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="creator" type="string">
+            <column name="CREATOR" length="510" />
+        </property>
+        <property name="forecolor" type="string">
+            <column name="FORECOLOR" length="510" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

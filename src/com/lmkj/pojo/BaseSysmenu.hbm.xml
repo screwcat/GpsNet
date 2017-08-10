@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseSysmenu" table="BASE_SYSMENU" schema="TEST">
+        <id name="menuId" type="string">
+            <column name="MENU_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="parentid" type="string">
+            <column name="PARENTID" length="50" />
+        </property>
+        <property name="menuName" type="string">
+            <column name="MENU_NAME" length="50" />
+        </property>
+        <property name="menuTitle" type="string">
+            <column name="MENU_TITLE" length="50" />
+        </property>
+        <property name="menuImg" type="string">
+            <column name="MENU_IMG" length="50" />
+        </property>
+        <property name="menuType" type="big_decimal">
+            <column name="MENU_TYPE" precision="38" scale="0" />
+        </property>
+        <property name="navigateurl" type="string">
+            <column name="NAVIGATEURL" length="200" />
+        </property>
+        <property name="target" type="string">
+            <column name="TARGET" length="50" />
+        </property>
+        <property name="allowedit" type="big_decimal">
+            <column name="ALLOWEDIT" precision="38" scale="0" />
+        </property>
+        <property name="allowdelete" type="big_decimal">
+            <column name="ALLOWDELETE" precision="38" scale="0" />
+        </property>
+        <property name="sortcode" type="big_decimal">
+            <column name="SORTCODE" precision="38" scale="0" />
+        </property>
+        <property name="deletemark" type="big_decimal">
+            <column name="DELETEMARK" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" not-null="true" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+        <property name="modifydate" type="serializable">
+            <column name="MODIFYDATE" />
+        </property>
+        <property name="modifyuserid" type="string">
+            <column name="MODIFYUSERID" length="50" />
+        </property>
+        <property name="modifyusername" type="string">
+            <column name="MODIFYUSERNAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

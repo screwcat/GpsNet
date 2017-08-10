@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseDic" table="BASE_DIC" schema="TEST">
+        <id name="baseid" type="big_decimal">
+            <column name="BASEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="basename" type="string">
+            <column name="BASENAME" length="100" not-null="true" />
+        </property>
+        <property name="baseicon" type="string">
+            <column name="BASEICON" length="200" />
+        </property>
+        <property name="parentid" type="big_decimal">
+            <column name="PARENTID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ischild" type="big_decimal">
+            <column name="ISCHILD" precision="38" scale="0" />
+        </property>
+        <property name="basevalue" type="big_decimal">
+            <column name="BASEVALUE" precision="38" scale="0" />
+        </property>
+        <property name="desc" type="string">
+            <column name="Desc" length="200" />
+        </property>
+        <property name="enbasename" type="string">
+            <column name="ENBASENAME" length="100" />
+        </property>
+        <property name="showorder" type="big_decimal">
+            <column name="SHOWORDER" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

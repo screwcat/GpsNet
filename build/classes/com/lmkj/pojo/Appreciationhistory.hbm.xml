@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Appreciationhistory" table="APPRECIATIONHISTORY" schema="TEST">
+        <id name="appreciationid" type="big_decimal">
+            <column name="APPRECIATIONID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="vbdate" type="serializable">
+            <column name="VBDATE" />
+        </property>
+        <property name="vedate" type="serializable">
+            <column name="VEDATE" />
+        </property>
+        <property name="appcreatrdate" type="serializable">
+            <column name="APPCREATRDATE" />
+        </property>
+        <property name="imei" type="string">
+            <column name="IMEI" length="50" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="50" />
+        </property>
+        <property name="vmoney" type="big_decimal">
+            <column name="VMONEY" precision="38" scale="0" />
+        </property>
+        <property name="vmonth" type="big_decimal">
+            <column name="VMONTH" precision="38" scale="0" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

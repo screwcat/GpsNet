@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Apilog" table="APILOG" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="logdate" type="serializable">
+            <column name="LOGDATE" />
+        </property>
+        <property name="ip" type="string">
+            <column name="IP" length="40" />
+        </property>
+        <property name="useraccount" type="string">
+            <column name="USERACCOUNT" length="30" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="2000" />
+        </property>
+        <property name="udid" type="string">
+            <column name="UDID" length="100" />
+        </property>
+        <property name="os" type="string">
+            <column name="OS" length="100" />
+        </property>
+        <property name="osversion" type="string">
+            <column name="OSVERSION" length="100" />
+        </property>
+        <property name="appversion" type="string">
+            <column name="APPVERSION" length="100" />
+        </property>
+        <property name="usersession" type="string">
+            <column name="USERSESSION" length="100" />
+        </property>
+        <property name="unique" type="string">
+            <column name="unique" length="100" />
+        </property>
+        <property name="begintime" type="serializable">
+            <column name="BEGINTIME" />
+        </property>
+        <property name="executetime" type="string">
+            <column name="EXECUTETIME" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

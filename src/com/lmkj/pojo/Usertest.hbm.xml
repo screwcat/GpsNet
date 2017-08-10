@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Usertest" table="USERTEST" schema="TEST">
+        <id name="userId" type="big_decimal">
+            <column name="USER_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="string">
+            <column name="USER_NAME" length="20" />
+        </property>
+        <property name="passWord" type="string">
+            <column name="PASS_WORD" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

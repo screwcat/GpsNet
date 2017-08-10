@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Advert" table="ADVERT" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="adpath" type="string">
+            <column name="ADPATH" length="100" not-null="true" />
+        </property>
+        <property name="advertname" type="string">
+            <column name="ADVERTNAME" length="100" not-null="true" />
+        </property>
+        <property name="lat" type="double">
+            <column name="LAT" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="100" not-null="true" />
+        </property>
+        <property name="lng" type="double">
+            <column name="LNG" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="uploadtime" type="serializable">
+            <column name="UPLOADTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

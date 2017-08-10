@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Leauditcollectdatabases" table="LEAUDITCOLLECTDATABASES" schema="TEST">
+        <id name="databaseid" type="big_decimal">
+            <column name="DATABASEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="databasename" type="string">
+            <column name="DATABASENAME" length="510" />
+        </property>
+        <property name="databaselogbackuppool" type="string">
+            <column name="DATABASELOGBACKUPPOOL" length="2048" />
+        </property>
+        <property name="backupppid" type="big_decimal">
+            <column name="BACKUPPPID" precision="38" scale="0" />
+        </property>
+        <property name="repositoryhostname" type="string">
+            <column name="REPOSITORYHOSTNAME" length="2048" />
+        </property>
+        <property name="repositoryhostport" type="big_decimal">
+            <column name="REPOSITORYHOSTPORT" precision="38" scale="0" />
+        </property>
+        <property name="globalrepositoryname" type="string">
+            <column name="GLOBALREPOSITORYNAME" length="2048" />
+        </property>
+        <property name="auditon" type="char">
+            <column name="AUDITON" length="1" not-null="true" />
+        </property>
+        <property name="opfilter" type="string">
+            <column name="OPFILTER" length="510" />
+        </property>
+    </class>
+</hibernate-mapping>

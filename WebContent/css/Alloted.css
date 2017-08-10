@@ -1,0 +1,26 @@
+
+/* CSS Document */
+*{ margin:0; padding:0; font-size:12px;}
+img{ border:0;}
+a{ text-decoration:none;}
+.box1{height:980px; background-image:url(../../images/b.jpg);}
+.box2{width:1200px;height:25px; background-image:url(../../images/c.jpg);float:left;}
+.xiakuang{height:21px;}
+.box3{width:190px;height:25px; background-image:url(../../images/c.jpg);float:right;}
+.w4{height:6px; background-color:#FFF;width:980px;}
+.box4{width:980px;height:600px; background-image:url(../../images/b.jpg); border-top-color:#CCC; border-top-style:solid; border-top-width:1px;float:left;}
+.box5{width:300px;height:649px;  border:solid 1px #CCCCCC; margin-left:20px;float:left; background-color:#FFF;}
+.box6{width:300px; height:25px; background-image:url(../../images/c.jpg);}
+.box7{width:80px;height:22px; float:left; color:#1d5e1c; line-height:25px; margin-left:13px;}
+.box8{width:45px;height:22px; float:left;}
+.box9{float:left;}
+.box10{float:right; line-height:25px;}
+.searchL .inputBox .inputText01 {
+     float:right;
+	height: 20px;
+	width: 80px;
+	border: 1px solid #383838;
+}
+.box13{width:605px;height:620px; float:right;border-right-color:#CCC; border-right-style:solid; border-right-width:1px;border-left-color:#CCC; border-left-style:solid; border-left-width:1px;border-bottom-color:#CCC; border-bottom-style:solid; border-bottom-width:1px; background-color:#FFF;}
+.box14{ height:26px; background-image:url(../../images/c.jpg);}
+.box15{width:80px;height:22px; float:left; color:#1d5e1c; line-height:25px; margin-left:13px;}

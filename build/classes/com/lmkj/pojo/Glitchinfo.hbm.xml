@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Glitchinfo" table="GLITCHINFO" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="applicable" type="string">
+            <column name="APPLICABLE" length="400" />
+        </property>
+        <property name="faultcode" type="string">
+            <column name="FAULTCODE" length="6" />
+        </property>
+        <property name="chinesedef" type="string">
+            <column name="CHINESEDEF" length="400" />
+        </property>
+        <property name="englishdef" type="string">
+            <column name="ENGLISHDEF" length="400" />
+        </property>
+        <property name="category" type="string">
+            <column name="CATEGORY" length="400" />
+        </property>
+        <property name="knowledge" type="string">
+            <column name="KNOWLEDGE" length="1200" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Fuelconsumption" table="FUELCONSUMPTION" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="510" />
+        </property>
+        <property name="intervaldescr" type="string">
+            <column name="INTERVALDESCR" length="510" />
+        </property>
+        <property name="hour" type="java.lang.Double">
+            <column name="HOUR" precision="126" scale="0" />
+        </property>
+        <property name="staticdate" type="serializable">
+            <column name="STATICDATE" />
+        </property>
+        <property name="intervaltype" type="big_decimal">
+            <column name="INTERVALTYPE" precision="38" scale="0" />
+        </property>
+        <property name="mileage" type="java.lang.Double">
+            <column name="MILEAGE" precision="126" scale="0" />
+        </property>
+        <property name="oil" type="java.lang.Double">
+            <column name="OIL" precision="126" scale="0" />
+        </property>
+        <property name="oil1" type="java.lang.Double">
+            <column name="OIL1" precision="126" scale="0" />
+        </property>
+        <property name="mileage1" type="java.lang.Double">
+            <column name="MILEAGE1" precision="126" scale="0" />
+        </property>
+        <property name="oil2" type="java.lang.Double">
+            <column name="OIL2" precision="126" scale="0" />
+        </property>
+        <property name="mileage2" type="java.lang.Double">
+            <column name="MILEAGE2" precision="126" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Huanxincommand" table="HUANXINCOMMAND" schema="TEST">
+        <id name="cmdid" type="big_decimal">
+            <column name="CMDID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="gpsid" type="string">
+            <column name="GPSID" length="510" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="510" />
+        </property>
+        <property name="cmd" type="string">
+            <column name="CMD" length="40" />
+        </property>
+        <property name="data" type="string">
+            <column name="DATA" length="4000" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="fromuser" type="string">
+            <column name="FROMUSER" length="510" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="510" />
+        </property>
+        <property name="remark" type="string">
+            <column name="REMARK" length="510" />
+        </property>
+        <property name="sn" type="big_decimal">
+            <column name="SN" precision="38" scale="0" />
+        </property>
+        <property name="touserhuanxin" type="string">
+            <column name="TOUSERHUANXIN" length="100" />
+        </property>
+        <property name="touserweixin" type="string">
+            <column name="TOUSERWEIXIN" length="100" />
+        </property>
+        <property name="sendtime" type="serializable">
+            <column name="SENDTIME" />
+        </property>
+        <property name="title" type="string">
+            <column name="TITLE" length="160" />
+        </property>
+        <property name="messagetype" type="string">
+            <column name="MESSAGETYPE" length="20" />
+        </property>
+        <property name="messagepushtype" type="string">
+            <column name="MESSAGEPUSHTYPE" length="20" />
+        </property>
+        <property name="apppackname" type="string">
+            <column name="APPPACKNAME" length="400" />
+        </property>
+        <property name="tonken" type="string">
+            <column name="TONKEN" length="200" />
+        </property>
+        <property name="messagepushcontent" type="string">
+            <column name="MESSAGEPUSHCONTENT" length="1000" />
+        </property>
+        <property name="key" type="big_decimal">
+            <column name="KEY" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="cmdstatus" type="big_decimal">
+            <column name="CMDSTATUS" precision="38" scale="0" />
+        </property>
+        <property name="isremovealarm" type="big_decimal">
+            <column name="ISREMOVEALARM" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

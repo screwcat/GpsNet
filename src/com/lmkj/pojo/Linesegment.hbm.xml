@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Linesegment" table="LINESEGMENT" schema="TEST">
+        <id name="segid" type="big_decimal">
+            <column name="SEGID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="enclosureid" type="big_decimal">
+            <column name="ENCLOSUREID" precision="38" scale="0" />
+        </property>
+        <property name="pointid" type="big_decimal">
+            <column name="POINTID" precision="38" scale="0" />
+        </property>
+        <property name="latitude1" type="java.lang.Double">
+            <column name="LATITUDE1" precision="126" scale="0" />
+        </property>
+        <property name="longitude1" type="java.lang.Double">
+            <column name="LONGITUDE1" precision="126" scale="0" />
+        </property>
+        <property name="latitude2" type="java.lang.Double">
+            <column name="LATITUDE2" precision="126" scale="0" />
+        </property>
+        <property name="longitude2" type="java.lang.Double">
+            <column name="LONGITUDE2" precision="126" scale="0" />
+        </property>
+        <property name="linewidth" type="big_decimal">
+            <column name="LINEWIDTH" precision="38" scale="0" />
+        </property>
+        <property name="isstation" type="java.lang.Boolean">
+            <column name="ISSTATION" precision="1" scale="0" />
+        </property>
+        <property name="limitspeed" type="java.lang.Boolean">
+            <column name="LIMITSPEED" precision="1" scale="0" />
+        </property>
+        <property name="bytime" type="java.lang.Boolean">
+            <column name="BYTIME" precision="1" scale="0" />
+        </property>
+        <property name="maxspeed" type="big_decimal">
+            <column name="MAXSPEED" precision="38" scale="0" />
+        </property>
+        <property name="overspeedtime" type="big_decimal">
+            <column name="OVERSPEEDTIME" precision="38" scale="0" />
+        </property>
+        <property name="maxtimelimit" type="big_decimal">
+            <column name="MAXTIMELIMIT" precision="38" scale="0" />
+        </property>
+        <property name="mintimelimit" type="big_decimal">
+            <column name="MINTIMELIMIT" precision="38" scale="0" />
+        </property>
+        <property name="alarmtype" type="string">
+            <column name="ALARMTYPE" length="510" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

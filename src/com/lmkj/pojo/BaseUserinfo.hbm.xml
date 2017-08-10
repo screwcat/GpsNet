@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseUserinfo" table="BASE_USERINFO" schema="TEST">
+        <id name="userId" type="string">
+            <column name="USER_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="userCode" type="string">
+            <column name="USER_CODE" length="50" />
+        </property>
+        <property name="userAccount" type="string">
+            <column name="USER_ACCOUNT" length="50" />
+        </property>
+        <property name="userPwd" type="string">
+            <column name="USER_PWD" length="50" />
+        </property>
+        <property name="userName" type="string">
+            <column name="USER_NAME" length="50" />
+        </property>
+        <property name="userSex" type="big_decimal">
+            <column name="USER_SEX" precision="38" scale="0" />
+        </property>
+        <property name="title" type="string">
+            <column name="TITLE" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="20" />
+        </property>
+        <property name="theme" type="string">
+            <column name="THEME" length="50" />
+        </property>
+        <property name="question" type="string">
+            <column name="QUESTION" length="50" />
+        </property>
+        <property name="answerquestion" type="string">
+            <column name="ANSWERQUESTION" length="50" />
+        </property>
+        <property name="deletemark" type="big_decimal">
+            <column name="DELETEMARK" precision="38" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+        <property name="modifydate" type="serializable">
+            <column name="MODIFYDATE" />
+        </property>
+        <property name="modifyuserid" type="string">
+            <column name="MODIFYUSERID" length="50" />
+        </property>
+        <property name="modifyusername" type="string">
+            <column name="MODIFYUSERNAME" length="50" />
+        </property>
+        <property name="userRemark" type="string">
+            <column name="USER_REMARK" length="50" />
+        </property>
+        <property name="comids" type="string">
+            <column name="COMIDS" length="2000" />
+        </property>
+        <property name="usertype" type="big_decimal">
+            <column name="USERTYPE" precision="38" scale="0" />
+        </property>
+        <property name="pid" type="string">
+            <column name="PID" length="20" />
+        </property>
+        <property name="cid" type="string">
+            <column name="CID" length="20" />
+        </property>
+        <property name="gid" type="big_decimal">
+            <column name="GID" precision="38" scale="0" />
+        </property>
+        <property name="parentid" type="big_decimal">
+            <column name="PARENTID" precision="38" scale="0" />
+        </property>
+        <property name="uid" type="big_decimal">
+            <column name="uId" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="100" />
+        </property>
+        <property name="fixedphone" type="string">
+            <column name="FIXEDPHONE" length="100" />
+        </property>
+        <property name="accountbalance" type="java.lang.Double">
+            <column name="ACCOUNTBALANCE" precision="126" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

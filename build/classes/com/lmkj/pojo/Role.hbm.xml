@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Role" table="ROLE" schema="TEST">
+        <id name="roleid" type="big_decimal">
+            <column name="ROLEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="code" type="string">
+            <column name="CODE" length="510" />
+        </property>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="510" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

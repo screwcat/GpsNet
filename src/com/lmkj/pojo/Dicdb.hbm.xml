@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Dicdb" table="DICDB" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="dicid" type="string">
+            <column name="DICID" length="8" not-null="true" />
+        </property>
+        <property name="dicname" type="string">
+            <column name="DICNAME" length="80" not-null="true" />
+        </property>
+        <property name="dictype" type="big_decimal">
+            <column name="DICTYPE" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="dicenname" type="string">
+            <column name="DICENNAME" length="80" />
+        </property>
+    </class>
+</hibernate-mapping>

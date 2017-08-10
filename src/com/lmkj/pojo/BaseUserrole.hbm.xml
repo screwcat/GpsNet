@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.BaseUserrole" table="BASE_USERROLE" schema="TEST">
+        <id name="userroleId" type="string">
+            <column name="USERROLE_ID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="userId" type="string">
+            <column name="USER_ID" length="50" />
+        </property>
+        <property name="rolesId" type="string">
+            <column name="ROLES_ID" length="50" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createuserid" type="string">
+            <column name="CREATEUSERID" length="50" />
+        </property>
+        <property name="createusername" type="string">
+            <column name="CREATEUSERNAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

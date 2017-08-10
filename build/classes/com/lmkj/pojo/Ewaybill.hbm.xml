@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Ewaybill" table="EWAYBILL" schema="TEST">
+        <id name="billid" type="big_decimal">
+            <column name="BILLID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="510" />
+        </property>
+        <property name="billcontent" type="string">
+            <column name="BILLCONTENT" length="510" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

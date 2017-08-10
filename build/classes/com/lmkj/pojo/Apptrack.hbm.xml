@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Apptrack" table="APPTRACK" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="40" not-null="true" />
+        </property>
+        <property name="imei" type="string">
+            <column name="IMEI" length="32" not-null="true" />
+        </property>
+        <property name="ayear" type="big_decimal">
+            <column name="AYEAR" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="amonth" type="big_decimal">
+            <column name="AMONTH" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="ctrack" type="double">
+            <column name="CTRACK" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="totaltrack" type="double">
+            <column name="TOTALTRACK" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="rdate" type="serializable">
+            <column name="RDATE" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

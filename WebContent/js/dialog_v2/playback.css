@@ -1,0 +1,99 @@
+a{color:#0077FF;}
+.playback-table{empty-cells:show;border-collapse:collapse;width:100%;background: #fff;}
+.playback-table td,
+.playback-table th{padding:3px 0;line-height: 20px;color:#676767;text-align:center;}
+.playback-table thead tr{background:#F0F0F0 url(../../v3/img/bg_x.gif) repeat-x 0 -80px;}
+.playback-table thead tr th.first{background-image:none;}
+.playback-table thead tr th{padding:7px 0;background:url(../../v3/img/icons.gif) no-repeat 0 -49px;_background-color:#F0F0F0;font-weight:bold;line-height:22px;white-space: nowrap;}
+.playback-table tbody tr.even td{ background-color:#eee;}
+.playback-table tbody tr.odd td{ background-color:#F4F4F4;}
+.playback-table tbody tr:hover td{background-color:#A0B0C7;color:#fff;}
+.playback-table tbody tr:hover td a{color:#fff;}
+.playback-table tbody tr.total{border:1px solid #fff;border-width:1px 0;background:#D5D9E2;}
+.playback-table td.playback-alarm-td,.playback-table td.playback-address-td{padding: 3px 5px;text-align: left;}
+.playback-table td.playback-address-td a,.playback-table td.playback-address-td a:visited{color: #666;text-decoration: none;}
+.playback-table td.playback-address-td a:hover,.playback-table td.playback-address-td a:active{color: #fff;_color:#0077FF;text-decoration: underline;}
+
+#speed-slider .sliderbar-info{display: none;position: absolute;height:20px;line-height: 20px;padding: 0 5px;background: #eee;top: 0;border: 1px solid #999;white-space: nowrap;z-index: 999;}
+
+#timeline-bar-wrapper{padding:5px;background: #E2E9F1;border-bottom: 1px solid #999999;}
+#timeline-bar-wrapper .sliderbar-wrap{width:100%;height:6px;position:relative;cursor:pointer;border:1px solid #ccc;border-color:#ccc #E7E7E7 #E7E7E7 #ccc;background:#F2F4F3;}
+#timeline-bar-wrapper .sliderbar-block{position:absolute;top:-3px;background:#6FD1F1;width:10px;height:10px;*font-size:0;over-flow:hidden;border:1px solid #5C9DC4;cursor:w-resize;}
+#timeline-bar-wrapper .sliderbar-unactive{width:100%;height:100%;position:absolute;}
+#timeline-bar-wrapper .sliderbar-block .info{position:relative;}
+#timeline-bar-wrapper .sliderbar-block span{position:absolute;bottom:-20px;_bottom:-14px;left:20px;padding:0 2px;background:#FFFFE1;font-size:12px;white-space:nowrap;}
+#timeline-bar-wrapper .sliderbar-info{display: none;position: absolute;height:20px;line-height: 20px;padding: 0 5px;background: #E2E9F1;top: -28px;z-index:10;border: 1px solid #999;border-bottom: 1px solid #E2E9F1;white-space: nowrap;}
+
+#info-panel-btn{width: 35px;height: 17px;line-height:17px;float: right;margin-right: 10px;position: relative;top:5px;cursor: pointer;color:#8EA8E0;}
+#info-panel-btn.opened{background:#8EA8E0;color:#fff;}
+
+#gps-list-wrapper{height:200px;display:none;overflow-y: auto;overflow-x: hidden;background: #fff;border-bottom:2px solid #A0B1C5;position: relative;width: 100%;}
+#fixed-thead-wrapper{display: none;position: fixed;_position:absolute;}
+.remark-text{font-weight: normal;color: #888;font-size: 12px;}
+.print-btn{float:right;margin-right:20px;z-index: 999;}
+
+/*地图切换*/
+.map-types{list-style:none;padding:0px;margin:0px;position:absolute;right:10px;top:55px;white-space:nowrap;z-index:10;cursor:pointer;}
+.map-types li{float:left;}
+.map-types li p{background-color:#fff;color:#000;padding:2px 6px;margin:0px;border-top:1px solid #8BA4DC;border-bottom:1px solid #8BA4DC;font:bold 12px/1.3em arial,simsun,sans-serif;font-weight:normal;box-shadow:2px 2px 3px rgba(0, 0, 0, 0.35);}
+.map-types .first p{border-left:1px solid #8BA4DC;border-radius:3px 0 0 3px;}
+.map-types .last p{border-right:1px solid #8BA4DC;border-radius:0 3px 3px 0;}
+.map-types .on p{background-color:#8EA8E0;color:#fff;font-weight:bold;}
+
+.overspeed-highlight td,.overspeed-highlight td a{color: #FF00FF !important;}
+.overspeed-highlight-red td,.overspeed-highlight-red td a{color: #FF0000 !important;}
+
+.playback-speed-chart{height: 0;overflow: hidden;}
+.playback-chart-icon{width: 35px;height: 17px;line-height:17px;float: right;margin-right: 5px;position: relative;top:5px;cursor: pointer;color:#8EA8E0;}
+.playback-chart-icon.opened{background:#8EA8E0;color:#fff;}
+#speed-chart-iframe{border: 0;padding: 0;margin: 0;width: 100%;height: 100%;}
+
+/*回放完毕弹窗*/
+.play-over-info{padding:0 0 0 76px;}
+.play-over-info h3{margin:22px 0 12px -44px;font-size:18px;line-height:28px;font-family:微软雅黑;}
+.play-over-info .icon{float:left;width:33px;height:33px;margin-right:10px;background:url(../../images/icons.png) no-repeat -32px 0;}
+.play-over-info ul{margin:0;padding:0;list-style:none;font-size:12px;line-height:20px;}
+.play-over-info .btn-ok{float:left;width:50px;}
+.play-over-info .travel-view,.play-over-info .path-view{float:left;margin:3px 0 0 9px;}
+.play-over-info .line-btns{padding-top:18px;}
+
+/*行程弹窗*/
+#travel-time-btn{margin:0 10px 0 0}
+.travel-title{height:50px;line-height: 50px;}
+.travel-title .condition{float:left;_padding-top:12px;}
+#travel-list-name{float:left;width:129px;margin:0 0 0 22px;font-weight:bold;font-size:16px;}
+#travel-content{height: 404px;overflow: hidden;z-index:-1;}
+#travel-content .t-content{height: 368px;overflow: auto;}
+.travel-table{width: 930px;}
+#travel-time-input{height: 14px;padding:4px;border: 1px solid #99A6B8;margin-right:2px;color: #999;width: 65px;}
+.travel-time-input-wrapper{position: relative;}
+.travel-time-input-wrapper span{margin-right:10px;}
+#travel-interval-list{display: none;position: absolute;top:17px;left: 0;z-index: 999;background: #fff;border: 1px solid #99A6B8;width: 73px;list-style: none;padding: 0;margin: 0;}
+#travel-interval-list li{list-style: none;height: 25px;line-height: 25px;border-bottom:  1px solid #99A6B8;padding: 0;margin: 0;text-align: left;overflow: hidden;}
+#travel-interval-list li a{display: block;height: 100%;width: 100%;margin: 0;padding-left:10px;text-decoration: none;color: #333;}
+#travel-interval-list li a:hover,#travel-interval-list li a:active{background: #eee;text-decoration: none;color: #333;}
+.more-address{display: inline-block;width: 16px;height: 18px;background: url("images/more.gif") no-repeat;font-size: -999px;overflow: hidden;cursor: pointer;vertical-align:middle;}
+
+#dl-gps-data{position:absolute;top:13px;right:90px;text-align:left;color:#333;padding: 1px 5px 2px;z-index: 1;}
+#dl-gps-data.client{right: 50px}
+.isClient #dl-gps-data{top:6px;}
+#dl-gps-data #dl-box{position:absolute;top:25px;right:0px;width:220px;height:210px;display:none;z-index:999;}
+#dl-gps-data #dl-box .dl-arrow{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:10px solid #333;width:0;height:0;position:absolute;top:-10px;right:22px;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+#dl-gps-data #dl-box .dl-wrap{width:100%;height:100%;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;background:#333;position:absolute;top:0;left:0;z-index:-2;}
+#dl-gps-data #dl-box .dl-bg{width:210px;height:200px;background:#fff;margin:5px;position:absolute;top:0;left:0;z-index:-1;}
+#dl-gps-data #dl-box .dl-content{margin-top:20px;text-align:center;}
+#dl-gps-data #dl-box .dl-content p{margin:20px;}
+#dl-gps-data #dl-box .dl-content .dl-tip{margin:0 5px;text-align:left;line-height:1.4em;padding:8px 0 0 45px;height:60px;background:url(../../images/arrow-down.jpg) no-repeat 20px 25px #eee;color:#666;}
+#dl-gps-data.en #dl-box{height: 245px;}
+#dl-gps-data.en #dl-box .dl-arrow{right:48px;}
+#dl-gps-data.en #dl-box .dl-bg{height:230px;}
+#dl-gps-data.en #dl-box .dl-content .dl-tip{height:80px;}
+#dl-gps-data{color:#8EA8E0;}
+#dl-gps-data.on{background:#8EA8E0;color:#fff;}
+#dl-gps-data .title{cursor:pointer;}
+
+.range-finder-btn{white-space:nowrap;z-index:10;cursor:pointer;position: absolute;bottom: 30px;left: 20px;width:30px;background-color:#fff;color:#000;padding:2px 6px;margin:0;border:1px solid #8BA4DC;box-shadow:2px 2px 3px rgba(0, 0, 0, 0.35);border-radius:3px;text-align: center;}
+.range-finder-btn.en{width: 60px;}
+.range-finder-btn.open{background-color:#8EA8E0;color:#fff;}
+.range-finder-btn span{font-weight: normal;}
+.range-finder-btn.open span{font:12px/1.3em arial,simsun,sans-serif;font-weight: bold;}

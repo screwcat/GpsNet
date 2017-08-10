@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Mediaitem" table="MEDIAITEM" schema="TEST">
+        <id name="mediaitemid" type="big_decimal">
+            <column name="MEDIAITEMID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="commandid" type="big_decimal">
+            <column name="COMMANDID" precision="38" scale="0" />
+        </property>
+        <property name="commandtype" type="string">
+            <column name="COMMANDTYPE" length="510" />
+        </property>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="510" />
+        </property>
+        <property name="gpsid" type="string">
+            <column name="GPSID" length="510" />
+        </property>
+        <property name="sendtime" type="serializable">
+            <column name="SENDTIME" />
+        </property>
+        <property name="multimediadataid" type="big_decimal">
+            <column name="MULTIMEDIADATAID" precision="38" scale="0" />
+        </property>
+        <property name="multimediatype" type="java.lang.Integer">
+            <column name="MULTIMEDIATYPE" precision="5" scale="0" />
+        </property>
+        <property name="multidediacodeformat" type="java.lang.Integer">
+            <column name="MULTIDEDIACODEFORMAT" precision="5" scale="0" />
+        </property>
+        <property name="channelid" type="java.lang.Integer">
+            <column name="CHANNELID" precision="5" scale="0" />
+        </property>
+        <property name="eventcode" type="java.lang.Integer">
+            <column name="EVENTCODE" precision="5" scale="0" />
+        </property>
+        <property name="filename" type="string">
+            <column name="FILENAME" length="510" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="LATITUDE" precision="126" scale="0" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="LONGITUDE" precision="126" scale="0" />
+        </property>
+        <property name="speed" type="java.lang.Double">
+            <column name="SPEED" precision="126" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

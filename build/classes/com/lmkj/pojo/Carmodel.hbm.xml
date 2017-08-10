@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Carmodel" table="CARMODEL" schema="TEST">
+        <id name="modelid" type="big_decimal">
+            <column name="MODELID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="modelname" type="string">
+            <column name="MODELNAME" length="100" not-null="true" />
+        </property>
+        <property name="parentid" type="big_decimal">
+            <column name="PARENTID" precision="38" scale="0" />
+        </property>
+        <property name="parentname" type="string">
+            <column name="PARENTNAME" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

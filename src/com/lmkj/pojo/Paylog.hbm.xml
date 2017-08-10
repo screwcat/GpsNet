@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Paylog" table="PAYLOG" schema="TEST">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="orderid" type="string">
+            <column name="ORDERID" length="100" not-null="true" />
+        </property>
+        <property name="tradeid" type="string">
+            <column name="TRADEID" length="100" not-null="true" />
+        </property>
+        <property name="xfsj" type="double">
+            <column name="XFSJ" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="surplusmoney" type="double">
+            <column name="SURPLUSMONEY" precision="126" scale="0" not-null="true" />
+        </property>
+        <property name="tradetime" type="serializable">
+            <column name="TRADETIME" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

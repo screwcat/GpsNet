@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.TenantUser" table="TENANT_USER" schema="TEST">
+        <id name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="userid" type="big_decimal">
+            <column name="USERID" precision="38" scale="0" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="510" />
+        </property>
+        <property name="usertype" type="string">
+            <column name="USERTYPE" length="510" />
+        </property>
+        <property name="job" type="string">
+            <column name="JOB" length="510" />
+        </property>
+        <property name="department" type="big_decimal">
+            <column name="DEPARTMENT" precision="38" scale="0" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="510" />
+        </property>
+        <property name="mail" type="string">
+            <column name="MAIL" length="510" />
+        </property>
+        <property name="loginname" type="string">
+            <column name="LOGINNAME" length="510" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="510" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="admin" type="java.lang.Boolean">
+            <column name="ADMIN" precision="1" scale="0" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

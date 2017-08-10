@@ -1,0 +1,32 @@
+﻿
+a {
+    text-decoration: none;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}  
+   
+.abox {
+    padding: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 2px;
+    border-width: 1px;
+    border-color: gray;
+    color: green;
+    cursor: pointer;
+    text-align: center;
+    border-style: solid;
+    display: inline-block;
+    font-size: 12px;
+    /*background-image: url(Ba1.png);*/
+    background-color: rgb(26, 123, 201);
+    /*background-color: green;*/
+    color: white;
+}

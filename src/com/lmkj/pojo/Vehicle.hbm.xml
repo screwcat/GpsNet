@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 9:15:51 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.lmkj.pojo.Vehicle" table="VEHICLE" schema="TEST">
+        <id name="vehicleid" type="big_decimal">
+            <column name="VEHICLEID" precision="38" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="plateno" type="string">
+            <column name="PLATENO" length="40" />
+        </property>
+        <property name="type" type="string">
+            <column name="TYPE" length="100" />
+        </property>
+        <property name="unit" type="string">
+            <column name="UNIT" length="20" />
+        </property>
+        <property name="monitor" type="string">
+            <column name="MONITOR" length="510" />
+        </property>
+        <property name="weight" type="java.lang.Double">
+            <column name="WEIGHT" precision="126" scale="0" />
+        </property>
+        <property name="driver" type="string">
+            <column name="DRIVER" length="20" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="100" />
+        </property>
+        <property name="measure" type="java.lang.Boolean">
+            <column name="MEASURE" precision="1" scale="0" />
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="TOTAL" precision="126" scale="0" />
+        </property>
+        <property name="remain" type="java.lang.Double">
+            <column name="REMAIN" precision="126" scale="0" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="DELETED" precision="1" scale="0" />
+        </property>
+        <property name="createdate" type="serializable">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="tenantid" type="big_decimal">
+            <column name="TENANTID" precision="38" scale="0" />
+        </property>
+        <property name="gpsida" type="string">
+            <column name="GPSIDA" length="510" />
+        </property>
+        <property name="truck" type="string">
+            <column name="TRUCK" length="100" />
+        </property>
+        <property name="gpsidb" type="string">
+            <column name="GPSIDB" length="510" />
+        </property>
+        <property name="initremain" type="java.lang.Double">
+            <column name="INITREMAIN" precision="126" scale="0" />
+        </property>
+        <property name="videodeviceid" type="string">
+            <column name="VIDEODEVICEID" length="510" />
+        </property>
+        <property name="sortid" type="big_decimal">
+            <column name="SORTID" precision="38" scale="0" />
+        </property>
+        <property name="vehicledevicetype" type="string">
+            <column name="VEHICLEDEVICETYPE" length="100" />
+        </property>
+        <property name="dvronline" type="big_decimal">
+            <column name="DVRONLINE" precision="38" scale="0" />
+        </property>
+        <property name="authorize" type="java.lang.Boolean">
+            <column name="AUTHORIZE" precision="1" scale="0" />
+        </property>
+        <property name="motorid" type="string">
+            <column name="MOTORID" length="40" />
+        </property>
+        <property name="intalldate" type="serializable">
+            <column name="INTALLDATE" />
+        </property>
+        <property name="gpscard" type="string">
+            <column name="GPSCARD" length="100" />
+        </property>
+        <property name="dvrcard" type="string">
+            <column name="DVRCARD" length="100" />
+        </property>
+        <property name="drivermobile" type="string">
+            <column name="DRIVERMOBILE" length="24" />
+        </property>
+        <property name="monitormobile" type="string">
+            <column name="MONITORMOBILE" length="100" />
+        </property>
+        <property name="loginname" type="string">
+            <column name="LOGINNAME" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="100" />
+        </property>
+        <property name="can" type="string">
+            <column name="CAN" length="100" />
+        </property>
+        <property name="cabnum" type="string">
+            <column name="CABNUM" length="100" />
+        </property>
+        <property name="childno" type="string">
+            <column name="CHILDNO" length="100" />
+        </property>
+        <property name="lastchecktime" type="serializable">
+            <column name="LASTCHECKTIME" />
+        </property>
+        <property name="listenip" type="string">
+            <column name="LISTENIP" length="100" />
+        </property>
+        <property name="listenport" type="string">
+            <column name="LISTENPORT" length="100" />
+        </property>
+        <property name="onlinetime" type="serializable">
+            <column name="ONLINETIME" />
+        </property>
+        <property name="offlinetime" type="serializable">
+            <column name="OFFLINETIME" />
+        </property>
+        <property name="updatelogdate" type="serializable">
+            <column name="UPDATELOGDATE" />
+        </property>
+        <property name="flowrate" type="java.lang.Double">
+            <column name="FLOWRATE" precision="126" scale="0" />
+        </property>
+        <property name="diskstate" type="string">
+            <column name="DISKSTATE" length="100" />
+        </property>
+        <property name="logtime" type="serializable">
+            <column name="LOGTIME" />
+        </property>
+        <property name="industry" type="string">
+            <column name="INDUSTRY" length="510" />
+        </property>
+        <property name="runstatus" type="string">
+            <column name="RUNSTATUS" length="510" />
+        </property>
+        <property name="gpsid" type="string">
+            <column name="GPSID" length="30" />
+        </property>
+        <property name="depid" type="big_decimal">
+            <column name="DEPID" precision="38" scale="0" />
+        </property>
+        <property name="color" type="big_decimal">
+            <column name="COLOR" precision="38" scale="0" />
+        </property>
+        <property name="gpsterminaltype" type="string">
+            <column name="GPSTERMINALTYPE" length="510" />
+        </property>
+        <property name="installdate" type="serializable">
+            <column name="INSTALLDATE" />
+        </property>
+        <property name="simno" type="string">
+            <column name="SIMNO" length="40" />
+        </property>
+        <property name="routes" type="string">
+            <column name="ROUTES" length="510" />
+        </property>
+        <property name="imei" type="string">
+            <column name="IMEI" length="30" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="MOBILE" length="22" />
+        </property>
+        <property name="comid" type="big_decimal">
+            <column name="COMID" precision="38" scale="0" />
+        </property>
+        <property name="jtjid" type="string">
+            <column name="JTJID" length="30" />
+        </property>
+        <property name="istranster" type="big_decimal">
+            <column name="ISTRANSTER" precision="38" scale="0" />
+        </property>
+        <property name="expiredate" type="serializable">
+            <column name="EXPIREDATE" />
+        </property>
+        <property name="carindustry" type="big_decimal">
+            <column name="CARINDUSTRY" precision="38" scale="0" />
+        </property>
+        <property name="vehicleidnumber" type="string">
+            <column name="VEHICLEIDNUMBER" length="40" />
+        </property>
+        <property name="isdel" type="big_decimal">
+            <column name="ISDEL" precision="38" scale="0" />
+        </property>
+        <property name="islock" type="big_decimal">
+            <column name="ISLOCK" precision="38" scale="0" />
+        </property>
+        <property name="oil" type="java.lang.Double">
+            <column name="OIL" precision="126" scale="0" />
+        </property>
+        <property name="vmoney" type="big_decimal">
+            <column name="VMONEY" precision="38" scale="0" />
+        </property>
+        <property name="vmonth" type="big_decimal">
+            <column name="VMONTH" precision="38" scale="0" />
+        </property>
+        <property name="vbdate" type="serializable">
+            <column name="VBDATE" />
+        </property>
+        <property name="vedate" type="serializable">
+            <column name="VEDATE" />
+        </property>
+        <property name="isopenvoice" type="big_decimal">
+            <column name="ISOPENVOICE" precision="38" scale="0" />
+        </property>
+        <property name="isobd" type="big_decimal">
+            <column name="ISOBD" precision="38" scale="0" />
+        </property>
+        <property name="obdinstalldate" type="serializable">
+            <column name="OBDINSTALLDATE" />
+        </property>
+        <property name="obdtype" type="string">
+            <column name="OBDTYPE" length="40" />
+        </property>
+        <property name="obdbrand" type="string">
+            <column name="OBDBRAND" length="40" />
+        </property>
+        <property name="totaltrack" type="java.lang.Double">
+            <column name="TOTALTRACK" precision="126" scale="0" />
+        </property>
+        <property name="addtrack" type="java.lang.Double">
+            <column name="ADDTRACK" precision="126" scale="0" />
+        </property>
+        <property name="isdefense" type="big_decimal">
+            <column name="ISDEFENSE" precision="38" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
